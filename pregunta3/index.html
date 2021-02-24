@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 3</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+<form action="Formulario" method="get">
+  <input type="date" id="beber" name="pa cuando?"
+       value="2021-002-23"
+       min="2021-01-01" max="2021-12-31">
+  <p>Elige una bebida: 
+   <select name="bebidas">
+     <option>agua</option>
+     <option>cerveza</option>
+     <option>coca cola</option>
+     <option>cafe</option>
+   </select>
+  </p>
+ <label for="nvasos">Cantidad de vasos:</label><br>
+  <input type="text" id="nvasos" name="nvasos"><br>
+</form>
+ <p>Presione enviar para aumentar una fila, y borrar para quitarla.</p>
+
+<table id="Vasos">
+  <tr>
+    <td>fecha</td>
+    <td>bebida</td>
+    <td>cantidad</td>
+    <td>mensaje</td>
+  </tr>
+  </tr>
+</table>
+<br>
+
+<button onclick="myCreateFunction()">Agregar fila</button>
+<button onclick="myDeleteFunction()">Borrar fila</button>
+
+
+  
+
+
+
+</body>
+</html>
+ 
